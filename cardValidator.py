@@ -3,24 +3,34 @@ card_number = input("Enter a card number: ")
 card_number = card_number.replace("-", "")
 card_number = card_number.replace(" ", "")
 
-reversed_card_num = card_number[::-1]
-
 sum_odd_nums = 0
 sum_even_nums = 0
 
 
-for i in reversed_card_num[::2]:
-    sum_odd_nums += int(i)
+def check_validity(card_num):
 
-for i in reversed_card_num[1::2]:
-    i = int(i) * 2
+    card_num = card_num[::-1]
 
-    if i >= 10:
-        sum_even_nums += 1 + (i % 10)
+    for num in card_num[::2]:
+        global sum_odd_nums
+        sum_odd_nums += int(num)
+
+    for i in card_num[1::2]:
+        i = int(i) * 2
+
+        if i >= 10:
+            global sum_even_nums
+            sum_even_nums += (1 + (i % 10))
+        else:
+            sum_even_nums += i
+
+    if (sum_odd_nums + sum_even_nums) % 10 == 0:
+        return True
     else:
-        sum_even_nums += i
+        return False
 
-if (sum_odd_nums + sum_even_nums) % 10 == 0:
-    print(f"CARD {card_number} VALID.")
+
+if check_validity(card_number):
+    print(f"{card_number} VALID.")
 else:
-    print(f"CARD {card_number} INVALID.")
+    print(f"{card_number} INVALID.")
