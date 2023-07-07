@@ -64,7 +64,27 @@ This program can be used as a starting point for implementing credit card valida
 *Depending on your operating system and shell, you may need to use `python3` instead of `python`.*
 
 <br>
-    
+
+## Steps used
+
+<br>
+
+1. Removes any '-' or ' ' _(spaces)_ in the card number.
+
+<br>
+
+2. Adds all digits in the odd places from right to left.
+
+<br>
+
+3. Doubles every second digit from right to left. If the result is a two-digit number, then the program adds the two numbers together to get a single digit _(e.g. 18 = 1 and 8 = 9)_
+
+<br>
+
+4. Sums the totals of the previous two steps and if the sum is divisible by 10, the credit card number is valid.
+
+<br>
+
 ## Inspiration
 
 <br>
