@@ -53,7 +53,7 @@ This program can be used as a starting point for implementing credit card valida
 
 2. Navigate to the project directory:
   ```bash
-  cd credit-card-validator
+  cd card-validator
   ```
 
 3. Run the program:
