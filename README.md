@@ -2,15 +2,7 @@
 
 <br>
 
-*Please note that there is currently no active development ongoing for this project. It is expected to remain as it is, unless there are specific updates or feature requests in the future.*
-
-<br>
-
-## Description
-
-<br>
-
-This GitHub repository contains a simple Python program designed to validate credit card numbers. The program allows users to input a credit card number, and it will determine whether the provided card number is valid or not. 
+This GitHub repository contains a simple algorithm designed to validate credit card numbers. The program allows users to input a credit card number, and it will determine whether the provided card number is valid or not. 
 
 This program can be used as a starting point for implementing credit card validation logic into larger projects or as a standalone tool for verifying card numbers. It offers a straightforward and user-friendly way to determine the validity of credit card numbers.
 
